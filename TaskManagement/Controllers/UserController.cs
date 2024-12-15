@@ -199,5 +199,32 @@ namespace TaskManagement.Controllers
         {
             return _context.User.Any(e => e.UserID == id);
         }
+
+
+        // POST: User/Accept/5
+        [HttpPost]
+        public IActionResult Accept(int id)
+        {
+            var user = _context.User.Find(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            user.Active = true;
+
+            try
+            {
+                _context.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+      
+                ModelState.AddModelError("", "Unable to accept user. Please try again.");
+                return View("Index", _context.User.ToList());
+            }
+
+            return RedirectToAction(nameof(Index)); 
+        }
     }
 }

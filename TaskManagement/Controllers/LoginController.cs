@@ -17,12 +17,12 @@ namespace TaskManagement.Controllers
         [HttpPost]
         public IActionResult Login(LoginModel model)
         {
-            var userFromDb = _db.User.Where(x => x.Username == model.UserName).FirstOrDefault();
+            var userFromDb = _db.User.Where(x => x.EmployeeNo == model.EmployeeNo).FirstOrDefault();
             if (userFromDb != null)
             {
                 if (userFromDb.Password == model.Password)
                 {
-                    HttpContext.Session.SetString("UserName", model.UserName.ToString());
+                    HttpContext.Session.SetInt32("EmployeeNo", model.EmployeeNo);
 
 
                     if (userFromDb.Active == true)
@@ -42,7 +42,7 @@ namespace TaskManagement.Controllers
         public IActionResult LogOut()
         {
             HttpContext.Session.Clear();
-            HttpContext.Session.Remove("UserName");
+            HttpContext.Session.Remove("EmployeNo");
             return View("Login");
         }
     }

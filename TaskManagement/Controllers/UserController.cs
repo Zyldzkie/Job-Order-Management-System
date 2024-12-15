@@ -66,7 +66,7 @@ namespace TaskManagement.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([Bind("UserID,Username,Password,Email,RoleID,Active,CreatedAt,UpdatedAt,CreatedBy,UpdatedBy")] User user)
+        public IActionResult Create([Bind("UserID,EmployeeNo,Password,Email,RoleID,Active,CreatedAt,UpdatedAt,CreatedBy,UpdatedBy")] User user)
         {
             if (ModelState.IsValid)
             {
@@ -140,7 +140,7 @@ namespace TaskManagement.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Edit(int id, [Bind("UserID,Username,Password,Email,RoleID,Active,CreatedAt,UpdatedAt,CreatedBy,UpdatedBy")] User user)
+        public IActionResult Edit(int id, [Bind("UserID,EmployeeNo,Password,Email,RoleID,Active,CreatedAt,UpdatedAt,CreatedBy,UpdatedBy")] User user)
         {
             if (id != user.UserID)
             {

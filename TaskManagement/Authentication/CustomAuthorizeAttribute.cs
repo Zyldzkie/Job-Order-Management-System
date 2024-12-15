@@ -46,13 +46,13 @@ namespace TaskManagement.Authentication
         public void OnAuthorization(AuthorizationFilterContext context)
         {
             //var employeeNo = context.HttpContext.Session["EmployeeNo"];
-            var userName = context.HttpContext.Session.GetString("UserName");
+            var userName = context.HttpContext.Session.GetInt32("EmployeeNo");
             
             var hasClaim = false;           
             if (userName != null)
             {  
-                var employeeRoleFromDb = _db.User.Where(x => x.Username == userName).Include(p => p.Role).FirstOrDefault();
-                context.HttpContext.Session.SetString("UserName", employeeRoleFromDb.Username);
+                var employeeRoleFromDb = _db.User.Where(x => x.EmployeeNo == userName).Include(p => p.Role).FirstOrDefault();
+                context.HttpContext.Session.SetInt32("EmployeeNo", employeeRoleFromDb.EmployeeNo);
                 context.HttpContext.Session.SetInt32("UserRoleId", employeeRoleFromDb.RoleID);
                 context.HttpContext.Session.SetString("RoleName", employeeRoleFromDb.Role.RoleName);
 

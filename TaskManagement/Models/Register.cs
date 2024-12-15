@@ -7,7 +7,7 @@ namespace TaskManagement.Models
     {
         [Required]
         [Display(Name = "Employee No")]
-        public string EmployeeNo { get; set; }  
+        public int EmployeeNo { get; set; }  
 
         [Required]
         [EmailAddress]

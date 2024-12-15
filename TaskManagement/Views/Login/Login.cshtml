@@ -1,34 +1,35 @@
-﻿@model LoginModel
+﻿@model TaskManagement.Models.LoginModel
+
 @{
     ViewData["Title"] = "Login";
     Layout = "_LayoutLogin";
 }
 
-<div class="login-container d-flex justify-content-center align-items-center vh-100" style="background-color: lightblue; width: 100vw; height: 100vh;">
-    <div class="card shadow-lg" style="width: 25rem;">
-        <div class="card-body p-4">
-            <h2 class="text-center mb-4">Log In</h2>
-            <hr />
+<div class="login-container">
+    <div class="col-md-4">
+        <section>
             <form method="post" asp-controller="Login" asp-action="Login" class="login-form">
-                <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
-
+                <h2 class="text-center mb-4">Use a local account to log in</h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-floating mb-3">
-                    <input asp-for="UserName" class="form-control" id="floatingUserName" autocomplete="username" aria-required="true" placeholder="Username" />
-                    <label for="floatingUserName">Username</label>
+                    <input asp-for="UserName" class="form-control" autocomplete="username" aria-required="true" />
+                    <label asp-for="UserName" class="form-label"></label>
                     <span asp-validation-for="UserName" class="text-danger"></span>
                 </div>
-
                 <div class="form-floating mb-3">
-                    <input asp-for="Password" type="password" class="form-control" id="floatingPassword" autocomplete="current-password" aria-required="true" placeholder="Password" />
-                    <label for="floatingPassword">Password</label>
+                    <input asp-for="Password" type="password" class="form-control" autocomplete="current-password" aria-required="true" />
+                    <label asp-for="Password" class="form-label"></label>
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
-            @*    <div class="text-center mt-3">
-                    <p>Don't have an account? <a asp-controller="Account" asp-action="Register">Register here</a></p>
-                </div>*@
-                <button id="login-submit" type="submit" class="btn btn-primary w-100">Log In</button>
+                <div>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                </div>
             </form>
-        </div>
+            <div class="mt-3">
+                <a asp-controller="Register" asp-action="Index">Register</a>
+            </div>
+        </section>
     </div>
 </div>
 

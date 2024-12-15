@@ -29,7 +29,7 @@ namespace TaskManagement.Controllers
             {
                 var user = new User
                 {
-                    Username = registrationModel.EmployeeNo,
+                    Username = registrationModel.Username,
                     Email = registrationModel.Email,
                     Password = registrationModel.Password, 
                     RoleID = registrationModel.RoleID,

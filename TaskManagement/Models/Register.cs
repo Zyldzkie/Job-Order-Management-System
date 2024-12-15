@@ -6,8 +6,8 @@ namespace TaskManagement.Models
     public class RegisterModel
     {
         [Required]
-        [Display(Name = "Employee No")]
-        public string EmployeeNo { get; set; }  
+        [Display(Name = "Employee Number")]
+        public string Username { get; set; }  
 
         [Required]
         [EmailAddress]

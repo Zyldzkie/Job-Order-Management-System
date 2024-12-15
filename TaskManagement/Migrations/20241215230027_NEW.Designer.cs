@@ -12,8 +12,8 @@ using TaskManagement.Data;
 namespace TaskManagement.Migrations
 {
     [DbContext(typeof(TaskManagementContext))]
-    [Migration("20241215205731_MigrationName")]
-    partial class MigrationName
+    [Migration("20241215230027_NEW")]
+    partial class NEW
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

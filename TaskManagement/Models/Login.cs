@@ -5,8 +5,8 @@ namespace TaskManagement.Models
     public class LoginModel
     {
         [Required]
-        [Display(Name = "User Name")]
-        public string UserName { get; set; }
+        [Display(Name = "Employee Number")]
+        public string Username { get; set; }
 
         [Required]
         [DataType(DataType.Password)]

@@ -17,12 +17,12 @@ namespace TaskManagement.Controllers
         [HttpPost]
         public IActionResult Login(LoginModel model)
         {
-            var userFromDb = _db.User.Where(x => x.Username == model.UserName).FirstOrDefault();
+            var userFromDb = _db.User.Where(x => x.Username == model.Username).FirstOrDefault();
             if (userFromDb != null)
             {
                 if (userFromDb.Password == model.Password)
                 {
-                    HttpContext.Session.SetString("UserName", model.UserName.ToString());
+                    HttpContext.Session.SetString("UserName", model.Username.ToString());
 
 
                     if (userFromDb.Active == true)

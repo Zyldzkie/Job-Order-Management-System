@@ -1,0 +1,30 @@
+﻿@model TaskManagement.Models.Task
+@{
+    Layout = "";    
+}
+<div id="popup-form">
+    <h2>Feedback</h2>
+        <form asp-action="Rating">
+            <input type="hidden" asp-for="TaskID" />
+            <input type="hidden" asp-for="ProjectID" />
+            <input type="hidden" asp-for="Priority" />
+            <input type="hidden" asp-for="TaskName" />
+            <input type="hidden" asp-for="CreatedBy" />
+            <input type="hidden" asp-for="CreatedAt" />
+            <input type="hidden" asp-for="Description" />
+            <div class="form-group">
+                <label asp-for="Rating" class="control-label"></label>
+                <select asp-for="Rating" class="form-control" asp-items="ViewBag.Rating"></select>
+                <span asp-validation-for="Rating" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Comments" class="control-label"></label>
+                <textarea asp-for="Comments" class="form-control"></textarea>
+                <span asp-validation-for="Comments" class="text-danger"></span>
+            </div>
+            <!-- Add other fields as necessary -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </form>
+</div>

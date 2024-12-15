@@ -22,7 +22,7 @@ namespace TaskManagement.Controllers
         public IActionResult Index(DateTime? startCreatedDate, DateTime? endCreatedDate, string statusFilter = "All")
         {
             var roleName = HttpContext.Session.GetString("RoleName");
-            var userName = HttpContext.Session.GetString("UserName");
+            var userName = HttpContext.Session.GetInt32("EmployeeNo").ToString();
 
             var projects = _context.Project.ToList();
 

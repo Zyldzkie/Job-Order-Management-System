@@ -239,7 +239,7 @@ namespace TaskManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                var userName = HttpContext.Session.GetString("UserName");
+                var userName = HttpContext.Session.GetInt32("EmployeeNo").ToString();
 
                 if (task.TaskID == 0)
                 {
@@ -282,7 +282,7 @@ namespace TaskManagement.Controllers
         {
             if (ModelState.IsValid)
             {
-                var userName = HttpContext.Session.GetString("UserName");
+                var userName = HttpContext.Session.GetInt32("EmployeeNo").ToString();
 
                 //if (task.TaskID > 0)
                 //{

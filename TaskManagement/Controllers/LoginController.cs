@@ -23,6 +23,7 @@ namespace TaskManagement.Controllers
                 if (userFromDb.Password == model.Password)
                 {
                     HttpContext.Session.SetInt32("EmployeeNo", model.EmployeeNo);
+                    Console.WriteLine($"Session EmployeeNo set to: {model.EmployeeNo}");
 
 
                     if (userFromDb.Active == true)
@@ -42,7 +43,7 @@ namespace TaskManagement.Controllers
         public IActionResult LogOut()
         {
             HttpContext.Session.Clear();
-            HttpContext.Session.Remove("EmployeNo");
+            HttpContext.Session.Remove("EmployeeNo");
             return View("Login");
         }
     }

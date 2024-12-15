@@ -1,6 +1,6 @@
 ﻿@{
-    bool isLogin = Context.Session.GetString("UserName") == null ? false : true;
-    var userName = Context.Session.GetString("UserName");
+    bool isLogin = Context.Session.GetInt32("EmployeeNo") == null ? false : true;
+    var employeeNo = Context.Session.GetInt32("EmployeeNo");
     var roleName = Context.Session.GetString("RoleName");
 }
 
@@ -66,7 +66,7 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
                             <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                <span class="navbar-text me-3">Welcome, @userName</span>
+                                <span class="navbar-text me-3">Welcome, @employeeNo</span>
                             </a>
                             <div class="dropdown-menu dropdown-menu-end rounded">
                             </div>

@@ -1,76 +1,76 @@
 body {
-    background-color: #4B0F0F; /* Darker maroon background */
-    color: #333; /* Dark gray text for better readability */
-    font-family: 'Poppins', sans-serif; /* Consistent font */
+    background-color: #4B0F0F;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
-    color: #FFCC00; /* Dandelion text color */
-    text-align: center; /* Center text alignment */
+    color: #FFCC00;
+    text-align: center;
 }
 
 .table {
     width: 100%;
-    margin: 20px 0; /* Space between tables */
-    background-color: white; /* White background for tables */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Prevent overflow */
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .table-striped tbody tr:nth-of-type(odd) {
-    background-color: #f9f9f9; /* Light gray for odd rows */
+    background-color: #f9f9f9;
 }
 
 .table th {
-    background-color: #4B0F0F; /* Darker maroon for header */
-    color: #FFCC00; /* Dandelion text color for header */
+    background-color: #4B0F0F;
+    color: #FFCC00;
 }
 
 .btn {
-    border-radius: 5px; /* Rounded corners for buttons */
-    padding: 10px 15px; /* Padding for buttons */
-    color: white; /* White text for buttons */
-    text-decoration: none; /* Remove underline */
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
 }
 
 .btn-edit {
-    background-color: #FFD700; /* Bright yellow for edit */
+    background-color: #FFD700;
 }
 
 .btn-edit:hover {
-    background-color: #FFC300; /* Darker yellow on hover */
+    background-color: #FFC300;
 }
 
 .btn-details {
-    background-color: #007bff; /* Bright blue for details */
+    background-color: #007bff;
 }
 
 .btn-details:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0056b3;
 }
 
 .btn-delete {
-    background-color: #FF5733; /* Bright red for delete */
+    background-color: #FF5733;
 }
 
 .btn-delete:hover {
-    background-color: #C70039; /* Darker red on hover */
+    background-color: #C70039;
 }
 
 .btn-create {
-    background-color: #28a745; /* Bright green for create */
-    color: white; /* White text for create */
+    background-color: #28a745;
+    color: white;
 }
 
 .btn-create:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: #218838;
 }
 
 .btn-search {
-    background-color: #4B0F0F; /* Darker maroon for search button */
-    color: #FFCC00; /* Dandelion text for search button */
+    background-color: #4B0F0F;
+    color: #FFCC00;
 }
 
 .btn-search:hover {
-    background-color: #3b0f0f; /* Darker maroon on hover */
+    background-color: #3b0f0f;
 }

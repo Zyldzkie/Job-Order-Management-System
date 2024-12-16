@@ -1,59 +1,57 @@
-/* Modern styles for Registration screen */
-
 body {
-    background-color: #4B0F0F; /* Darker maroon background */
-    color: #333; /* Dark gray text for better readability */
-    font-family: 'Poppins', sans-serif; /* Consistent font */
+    background-color: #4B0F0F;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2, h1 {
-    color: #FFCC00; /* Brighter dandelion text color */
+    color: #FFCC00;
     text-align: center;
-    margin-bottom: 30px; /* Increased margin for better spacing */
-    font-family: 'Poppins', sans-serif; /* Consistent font */
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .form-group {
-    margin-bottom: 20px; /* Increased margin for better spacing */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
-    padding: 20px; /* Increased padding for a spacious feel */
-    border-radius: 10px; /* More rounded corners */
-    background-color: #FFFFFF; /* White background for the form group */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
 }
 
 label {
-    color: #FFCC00; /* Dandelion text color for labels */
+    color: #FFCC00;
 }
 
 input.form-control {
-    border: 1px solid #4B0F0F; /* Darker maroon border */
+    border: 1px solid #4B0F0F;
     border-radius: 5px;
-    transition: border-color 0.3s; /* Smooth transition for focus */
+    transition: border-color 0.3s;
 }
 
 input.form-control:focus {
-    border-color: #FFCC00; /* Dandelion border on focus */
-    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5); /* Shadow on focus */
+    border-color: #FFCC00;
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5);
 }
 
 .btn-primary {
-    background-color: #4B0F0F; /* Darker maroon button */
-    border-color: #FFCC00; /* Dandelion border */
-    font-weight: bold; /* Bold text for buttons */
+    background-color: #4B0F0F;
+    border-color: #FFCC00;
+    font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #FFCC00; /* Dandelion on hover */
-    color: #4B0F0F; /* Darker maroon text on hover */
+    background-color: #FFCC00;
+    color: #4B0F0F;
 }
 
 /* Other existing styles... */
 
 a {
-    color: #FFCC00; /* Dandelion color for links */
-    text-decoration: none; /* Remove underline */
+    color: #FFCC00;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #4B0F0F; /* Maroon color on hover */
+    color: #4B0F0F;
 }

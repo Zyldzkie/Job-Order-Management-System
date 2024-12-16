@@ -1,27 +1,27 @@
-/* Styles for Home Page */
+
 
 .main {
-    background-color: #FFFFFF         ; /* Darker maroon background */
-    color: #333; /* Dark gray text for better readability */
-    font-family: 'Poppins', sans-serif; /* Consistent font */
+    background-color: #FFFFFF;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
 }
 
 .home-container {
-    margin-top: 100px; /* Space from the top */
-    padding: 20px; /* Padding for the container */
-    text-align: center; /* Center text alignment */
+    margin-top: 100px;
+    padding: 20px;
+    text-align: center;
 }
 
 h1 {
-    color: #FFCC00; /* Dandelion text color */
-    margin-bottom: 20px; /* Space below the heading */
+    color: #FFCC00;
+    margin-bottom: 20px;
 }
 
 .home-link {
-    color: #FFCC00; /* Dandelion color for links */
-    text-decoration: none; /* Remove underline */
+    color: #FFCC00;
+    text-decoration: none;
 }
 
 .home-link:hover {
-    color: #800000; /* Maroon color on hover */
+    color: #800000;
 }

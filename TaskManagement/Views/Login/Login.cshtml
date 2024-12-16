@@ -5,11 +5,16 @@
     Layout = "_LayoutLogin";
 }
 
+<head>
+    <link rel="stylesheet" href="~/css/loginpage.css" asp-append-version="true" />
+</head>
+
+
 <div class="login-container">
     <div class="col-md-4">
         <section>
             <form method="post" asp-controller="Login" asp-action="Login" class="login-form">
-                <h2 class="text-center mb-4">Use a local account to log in</h2>
+                <h1 class="text-center mb-4"><b>Log in</b></h1>
                 <hr />
                 <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                 <div class="form-floating mb-3">
@@ -23,7 +28,7 @@
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
                 <div>
-                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+                    <button id="login-submit" type="submit" class="w-100 btn btn-lg btn-primary">Confirm</button>
                 </div>
             </form>
             <div class="mt-3">

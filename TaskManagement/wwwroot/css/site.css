@@ -1,23 +1,3 @@
-/*html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-    margin-bottom: 60px;
-}*/
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
 ::after,
@@ -29,6 +9,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #FFCC00; /* Dandelion color for links */
 }
 
 li {
@@ -36,21 +17,26 @@ li {
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Consistent font */
+    background-color: #4B0F0F; /* Darker maroon background */
+    color: #333; /* Dark gray text for better readability */
+    margin-bottom: 60px;
 }
 
 .wrapper {
     display: flex;
+    flex-direction: row;
+    min-height: 100vh;
 }
 
 .main {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    flex: 1;
     width: 100%;
     overflow: hidden;
     transition: all 0.35s ease-in-out;
-    background-color: #fff;
+    background-color: #fff; /* White background for main content */
     min-width: 0;
 }
 
@@ -59,15 +45,16 @@ body {
     min-width: 70px;
     z-index: 1000;
     transition: all .25s ease-in-out;
-    background-color: #7e1215;
+    background-color: #4B0F0F; /* Sidebar color */
     display: flex;
     flex-direction: column;
+    height: 100vh;
 }
 
-    #sidebar.expand {
-        width: 260px;
-        min-width: 260px;
-    }
+#sidebar.expand {
+    width: 260px;
+    min-width: 260px;
+}
 
 .toggle-btn {
     background-color: transparent;
@@ -76,20 +63,20 @@ body {
     padding: 1rem 1.5rem;
 }
 
-    .toggle-btn i {
-        font-size: 1.5rem;
-        color: #FFF;
-    }
+.toggle-btn i {
+    font-size: 1.5rem;
+    color: #FFF;
+}
 
 .sidebar-logo {
     margin: auto 0;
 }
 
-    .sidebar-logo a {
-        color: #FFF;
-        font-size: 1.15rem;
-        font-weight: 600;
-    }
+.sidebar-logo a {
+    color: #FFF;
+    font-size: 1.15rem;
+    font-weight: 600;
+}
 
 #sidebar:not(.expand) .sidebar-logo,
 #sidebar:not(.expand) a.sidebar-link span {
@@ -105,7 +92,6 @@ body {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -195,4 +181,13 @@ a.sidebar-link:hover {
 }
 
 @media (min-width: 768px) {
+}
+
+.footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }

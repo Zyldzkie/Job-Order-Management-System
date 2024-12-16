@@ -5,7 +5,12 @@
        Layout = "_LayoutLogin";
    }
 
-   <h2>@ViewData["Title"]</h2>
+    <head>
+        <link rel="stylesheet" href="~/css/registrationpage.css" asp-append-version="true" />
+    </head>
+
+
+   <h1 class="mt-2">@ViewData["Title"]</h1>
 
    <form method="post" asp-controller="Register" asp-action="Create">
        <div class="form-group">

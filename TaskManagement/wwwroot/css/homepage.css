@@ -1,0 +1,27 @@
+/* Styles for Home Page */
+
+.main {
+    background-color: #FFFFFF         ; /* Darker maroon background */
+    color: #333; /* Dark gray text for better readability */
+    font-family: 'Poppins', sans-serif; /* Consistent font */
+}
+
+.home-container {
+    margin-top: 100px; /* Space from the top */
+    padding: 20px; /* Padding for the container */
+    text-align: center; /* Center text alignment */
+}
+
+h1 {
+    color: #FFCC00; /* Dandelion text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.home-link {
+    color: #FFCC00; /* Dandelion color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.home-link:hover {
+    color: #800000; /* Maroon color on hover */
+}

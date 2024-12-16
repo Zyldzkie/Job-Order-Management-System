@@ -1,0 +1,76 @@
+body {
+    background-color: #4B0F0F; /* Darker maroon background */
+    color: #333; /* Dark gray text for better readability */
+    font-family: 'Poppins', sans-serif; /* Consistent font */
+}
+
+h2 {
+    color: #FFCC00; /* Dandelion text color */
+    text-align: center; /* Center text alignment */
+}
+
+.table {
+    width: 100%;
+    margin: 20px 0; /* Space between tables */
+    background-color: white; /* White background for tables */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9; /* Light gray for odd rows */
+}
+
+.table th {
+    background-color: #4B0F0F; /* Darker maroon for header */
+    color: #FFCC00; /* Dandelion text color for header */
+}
+
+.btn {
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 10px 15px; /* Padding for buttons */
+    color: white; /* White text for buttons */
+    text-decoration: none; /* Remove underline */
+}
+
+.btn-edit {
+    background-color: #FFD700; /* Bright yellow for edit */
+}
+
+.btn-edit:hover {
+    background-color: #FFC300; /* Darker yellow on hover */
+}
+
+.btn-details {
+    background-color: #007bff; /* Bright blue for details */
+}
+
+.btn-details:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.btn-delete {
+    background-color: #FF5733; /* Bright red for delete */
+}
+
+.btn-delete:hover {
+    background-color: #C70039; /* Darker red on hover */
+}
+
+.btn-create {
+    background-color: #28a745; /* Bright green for create */
+    color: white; /* White text for create */
+}
+
+.btn-create:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.btn-search {
+    background-color: #4B0F0F; /* Darker maroon for search button */
+    color: #FFCC00; /* Dandelion text for search button */
+}
+
+.btn-search:hover {
+    background-color: #3b0f0f; /* Darker maroon on hover */
+}
